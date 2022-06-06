@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enredo</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+    <style>
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: 1;
+            margin: 0px !important;
+        }
+
+        .container{
+            
+        }
+
+        .logo{
+            position:absolute;
+            z-index: 300000;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 80vh;
+        }
+
+        /* Portrait */
+
+        @media (max-width: 768px){
+
+            .logo{
+                width: 50vh;
+            }
+
+        }
+    </style>
+
+    <div class="container"><img src="logo.svg" alt="Logo de Enredo" class="logo"></div>
+    
+    <video autoplay muted loop id="myVideo">
+        <source src="PexelsVideo2236056LuisQuintero.mp4" type="video/mp4">
+    </video>
+    
+    
+</body>
+</html>
